@@ -1,0 +1,31 @@
+{
+  "metrics": {
+    "timestamp": "2024-01-15T14:33:45Z",
+    "checkout_service": {
+      "cpu_usage": 87.5,
+      "memory_usage": 78.2,
+      "error_rate": 12.5,
+      "request_count": 4500,
+      "p99_latency": 5234,
+      "p95_latency": 3100,
+      "p50_latency": 450
+    },
+    "database": {
+      "connection_pool_size": 100,
+      "active_connections": 98,
+      "query_time_p99": 2800,
+      "slow_query_count": 45,
+      "replica_lag": 250
+    },
+    "payment_gateway": {
+      "upstream_latency": 2500,
+      "error_rate": 8.2,
+      "status": "DEGRADED"
+    },
+    "historical": {
+      "cpu_5m_ago": 35.2,
+      "cpu_10m_ago": 32.1,
+      "error_rate_5m_ago": 0.3
+    }
+  }
+}

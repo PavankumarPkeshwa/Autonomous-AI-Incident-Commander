@@ -1,0 +1,45 @@
+{
+  "deployments": [
+    {
+      "timestamp": "2024-01-15T14:15:00Z",
+      "service": "config-service",
+      "version": "v2.3.1",
+      "status": "COMPLETED",
+      "duration_seconds": 120,
+      "changes": {
+        "database_pool_size": "50 -> 100",
+        "cache_ttl": "300s -> 600s",
+        "timeout_threshold": "3000ms -> 2000ms"
+      }
+    },
+    {
+      "timestamp": "2024-01-15T13:45:00Z",
+      "service": "api-gateway",
+      "version": "v1.8.2",
+      "status": "COMPLETED",
+      "duration_seconds": 95,
+      "changes": {
+        "rate_limit": "1000 -> 800 req/s per user"
+      }
+    },
+    {
+      "timestamp": "2024-01-15T12:30:00Z",
+      "service": "checkout-service",
+      "version": "v3.2.0",
+      "status": "COMPLETED",
+      "duration_seconds": 150,
+      "changes": {
+        "payment_retry_logic": "updated",
+        "circuit_breaker_threshold": "5% -> 10%"
+      }
+    }
+  ],
+  "correlation_window": {
+    "incident_start": "2024-01-15T14:32:00Z",
+    "suspicious_deployment": {
+      "timestamp": "2024-01-15T14:15:00Z",
+      "service": "config-service",
+      "minutes_before_incident": 17
+    }
+  }
+}

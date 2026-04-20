@@ -1,0 +1,46 @@
+{
+  "faq": [
+    {
+      "id": "faq-001",
+      "question": "High CPU usage in checkout service",
+      "keywords": ["cpu", "high", "checkout", "usage"],
+      "solution": "Check connection pool settings and database query performance. Scale horizontally if needed.",
+      "severity": "high"
+    },
+    {
+      "id": "faq-002",
+      "question": "Payment gateway timeout errors",
+      "keywords": ["payment", "timeout", "gateway", "error"],
+      "solution": "Verify payment gateway upstream service health. Check circuit breaker configuration. Consider increasing timeout threshold.",
+      "severity": "critical"
+    },
+    {
+      "id": "faq-003",
+      "question": "Database connection pool exhausted",
+      "keywords": ["database", "connection", "pool", "exhausted"],
+      "solution": "Increase pool size in config. Check for connection leaks. Monitor slow queries.",
+      "severity": "high"
+    },
+    {
+      "id": "faq-004",
+      "question": "High p99 latency on API endpoints",
+      "keywords": ["latency", "p99", "slow", "response"],
+      "solution": "Profile slow endpoints. Check external dependencies. Consider caching or optimization.",
+      "severity": "medium"
+    },
+    {
+      "id": "faq-005",
+      "question": "Circuit breaker opens frequently",
+      "keywords": ["circuit", "breaker", "open", "fail"],
+      "solution": "Lower failure threshold temporarily. Fix underlying service. Monitor error rates.",
+      "severity": "high"
+    },
+    {
+      "id": "faq-006",
+      "question": "Recent deployment caused issues",
+      "keywords": ["deployment", "rollback", "revert", "change"],
+      "solution": "Review deployment changelog. Perform rollback if correlation found. Run smoke tests.",
+      "severity": "critical"
+    }
+  ]
+}
