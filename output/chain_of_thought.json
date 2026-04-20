@@ -1,0 +1,7 @@
+[
+  {
+    "agent": "resolver_agent",
+    "action": "resolution_planning",
+    "recommendations": "Analysis in progress (using fallback).\nError: Connection error."
+  }
+]
