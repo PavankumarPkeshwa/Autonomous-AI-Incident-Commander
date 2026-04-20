@@ -1,0 +1,67 @@
+# .dockerignore
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.Python
+env/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node/Frontend
+node_modules
+ui/dist
+ui/node_modules
+
+# Logs
+*.log
+*.logs
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Documentation
+*.md
+docs/
+README.md
+
+# Testing
+.pytest_cache
+.coverage
+htmlcov/
+
+# AWS
+.aws
+aws-cdk.json
+
+# CI/CD
+.github
+.gitlab-ci.yml
