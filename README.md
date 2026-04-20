@@ -1,4 +1,4 @@
-# Autonomous Incident Commander 🚨
+# Autonomous AI Incident Commander 🚨
 
 **A Multi-Agent AI System for Automated Production Incident Response**
 
