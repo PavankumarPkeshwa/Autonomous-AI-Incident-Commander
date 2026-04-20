@@ -1,0 +1,50 @@
+{
+  "logs": [
+    {
+      "timestamp": "2024-01-15T14:32:10Z",
+      "service": "checkout-service",
+      "level": "ERROR",
+      "message": "Connection timeout to payment-gateway",
+      "trace_id": "trace-12345",
+      "error_code": "PAYMENT_TIMEOUT"
+    },
+    {
+      "timestamp": "2024-01-15T14:32:15Z",
+      "service": "checkout-service",
+      "level": "ERROR",
+      "message": "Failed to process payment for order #98764",
+      "trace_id": "trace-12346",
+      "error_code": "PAYMENT_FAILED",
+      "user_id": "user-5678"
+    },
+    {
+      "timestamp": "2024-01-15T14:32:20Z",
+      "service": "checkout-service",
+      "level": "WARN",
+      "message": "High error rate detected: 12.5% of requests failing",
+      "error_code": "HIGH_ERROR_RATE"
+    },
+    {
+      "timestamp": "2024-01-15T14:32:25Z",
+      "service": "checkout-service",
+      "level": "ERROR",
+      "message": "Database connection pool exhausted",
+      "trace_id": "trace-12347",
+      "error_code": "DB_POOL_EXHAUSTED"
+    },
+    {
+      "timestamp": "2024-01-15T14:33:00Z",
+      "service": "checkout-service",
+      "level": "ERROR",
+      "message": "Circuit breaker opened for payment-gateway",
+      "error_code": "CIRCUIT_BREAKER_OPEN"
+    },
+    {
+      "timestamp": "2024-01-15T14:33:30Z",
+      "service": "api-gateway",
+      "level": "WARN",
+      "message": "High latency detected for checkout endpoint: 5200ms p99",
+      "endpoint": "/api/checkout/process"
+    }
+  ]
+}
